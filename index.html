@@ -3,13 +3,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Form Validation</title>
   </head>
   <body>
     <section class="form-container">
-      <form action="#"></form>
+      <section class="container-icon">
+        <i class="fa fa-paper-plane"></i>
+      </section>
+      <form action="#" class="container-form">
+        <section class="input-group">
+          <label>Your Name</label
+          ><input type="text" placeholder="Enter Your Name" id="name" />
+          <span class="error" id="name-error"></span>
+        </section>
+        <section class="input-group">
+          <label>Phone No.</label
+          ><input type="tel" placeholder="021 456 7894" id="phone" />
+          <span class="error" id="phone-error"></span>
+        </section>
+        <section class="input-group">
+          <label>Email Id</label
+          ><input type="email" placeholder="Enter Your Email" id="email" />
+          <span class="error" id="email-error"></span>
+        </section>
+        <section class="input-group">
+          <label>Your Message</label
+          ><textarea
+            rows="5"
+            placeholder="Enter Your Message"
+            id="message"
+          ></textarea>
+          <span class="error" id="message-error"></span>
+        </section>
+        <section class="input-group">
+          <input type="submit" value="Submit" id="submit-btn" />
+          <span class="error" id="submit-error"></span>
+        </section>
+      </form>
     </section>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
